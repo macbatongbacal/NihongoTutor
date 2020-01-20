@@ -49,11 +49,11 @@ namespace NihongoTutor
         private void InitialData()
         {
             if (rbtn1.IsChecked == true) {
-                preSourcePath = "C:\\Users\\a.batongbaca\\Pictures\\Nihongo\\Hiragana";
+                preSourcePath = "..\\..\\Hiragana";
             }
             else
             {
-                preSourcePath = "C:\\Users\\a.batongbaca\\Pictures\\Nihongo\\Katakana";
+                preSourcePath = "..\\..\\Katakana";
             }
             getrandomfile2(preSourcePath);
         }
@@ -69,6 +69,7 @@ namespace NihongoTutor
                 var extensions = new string[] { ".png", ".jpg", ".gif" };
                 try
                 {
+                    path = Path.GetFullPath(path);
                     var di = new DirectoryInfo(path);
                     var rgFiles = di.GetFiles("*.*").Where(f => extensions.Contains(f.Extension.ToLower()));
                     Random R = new Random();

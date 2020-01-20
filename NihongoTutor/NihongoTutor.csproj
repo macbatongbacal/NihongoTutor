@@ -94,5 +94,25 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Hiragana\a.JPG" />
+    <Resource Include="Hiragana\e.JPG" />
+    <Resource Include="Hiragana\i.JPG" />
+    <Resource Include="Hiragana\ka.JPG" />
+    <Resource Include="Hiragana\ke.JPG" />
+    <Resource Include="Hiragana\ki.JPG" />
+    <Resource Include="Hiragana\ko.JPG" />
+    <Resource Include="Hiragana\ku.JPG" />
+    <Resource Include="Hiragana\o.JPG" />
+    <Resource Include="Hiragana\u.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Katakana\a.JPG" />
+    <Resource Include="Katakana\e.JPG" />
+    <Resource Include="Katakana\i.JPG" />
+    <Resource Include="Katakana\o.JPG" />
+    <Resource Include="Katakana\u.JPG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
